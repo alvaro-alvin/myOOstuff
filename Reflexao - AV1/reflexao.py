@@ -1,23 +1,5 @@
-import ast
 import inspect
 from types import FunctionType
-#class PessoaMeta(type):
- #   def __new__(cls, what, bases=None, dict=None):  #what = nome da classe
-  #      print("dict:", dict)                        #bases = a tupla de classes base
-   #     if 'get_blog' in dict:                      #dict = dicionario de keys(atributos) e seus valores(*implementacoes)
-    #        print('Great you have get_blog')
-     #   else:
-      #      raise Exception('get_blog missing')
-        
-       # new_dict = {}
-        #for key, val in dict.items():
-         #   if(key == 'get_blog'):
-          #      new_dict['Pessoa_' + key] = val
-           # else:
-            #    new_dict[key] = val
-           # print("new dict:", new_dict)
-
-       # return type.__new__(cls, what, bases, new_dict)
 
 def isGetter(f:FunctionType):
     """Detecta se a funcao é um getter se o argumento é (self) e o nome inicia com '    def get_'"""
@@ -44,7 +26,6 @@ class PessoaMeta(type):                              #name = nome da classe
             if(type(val) == FunctionType):
                 if(isGetter(val)):
                     aux = aux + " " + GetterToPropiety(val)
-
         x.proprieties = aux
         return x 
 
@@ -56,7 +37,6 @@ class Pessoa(metaclass=PessoaMeta):
         self.idade = idade
         self.profissao = profissao
         pass
-
     
     def get_nome(self):
         """return the name """
@@ -69,7 +49,6 @@ class Pessoa(metaclass=PessoaMeta):
     def get_profissao(self):
         """return the job """
         return self.profissao
-
 
     def print(self):
         print("Nome:", self.nome, "idade:",  self.idade, "profissao:", self.profissao, '\n')
