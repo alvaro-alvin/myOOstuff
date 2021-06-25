@@ -1,0 +1,8 @@
+Nesta pasta estão presentes duas pastas: "Corrida de rua OO" e  "Corrida de rua P".
+Ambas as pastas possuem códigos fontes para um pequeno jogo que simula corridas, a pasta com final 'OO' possui o código feito em C++ e orientado a objetos, e a pasta com final 'P' possui o código feito e C totalemente procedural, e por mais que o código main seja semelhante a maneira como cada um é estruturado é bem difenrete de acordo com seus paradigmas.
+
+Breve explicação sobre o jogo:
+No inicio voce tem R$15000 na conta, e deve navegar pelo menu para acessar a loja e comprar um carro, quando ja tiver um carro só basta ir até o menu "correr" onde serão listas corredores de acordo com o tipo do seu carro.
+Então basta escolher contra quem voce quer correr, quanto mais dificil, mas caro é o presso de inscrição, mas a recompensa é sempre o dobro da inscrição. Ao selecionar o corredor adversario voce correra automaticamente, e recebera o resultado que é calculado conforme a potencia e o nivel do seu carro além do seu proprio nivel e os mesmos dados do concorrente com um dose de aleatoriedade.
+O seu nível aumenta automaticamente de acordo com o seu número de vitorias, para melhirar seu carro basta ir ao menu "carro" e melhorar um nivel ao custo de R$20.000.
+Os concorrentes são relativamente balanceados, então não adianta tentar ganhar de um adversario muito mais dificil com um carro fraco.
