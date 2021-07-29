@@ -68,6 +68,9 @@ Isso ira gerar um executavel com o nome de Gerenciador de garagem
 As funções de mostrar, adicionar e modificar os veiculos funcionarios e clientes são executadas pelo terminal, logo é preciso abrir o aplicativo por ele acessando o diretorio do executavel:
 
     ./Gerenciador_de_garagem
+   
+Para compilar os arquivos de teste basta compilalos utilizando um compilador C++ como `g++`, com exceção do `teste_dao` e `teste_empresa` que possuem seus makes respectivamente `make dao` e `make empresa`
 
+##### Informações sobre as classes disponíveis em `/include/readme.md`
 
 
