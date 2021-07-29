@@ -11,7 +11,7 @@ A classe Empresa também precisa de um objeto Dao para seu construtor
 
 É possível observar essas ligações no diagrama de classes a seguir:
 
-![alt text](../diagrama de classe.bmp)
+![alt text](../diagrama de classe.png)
 
 O arquivo UML.xmi pode ser aberto pelo aplicativo Umbrello.
 
