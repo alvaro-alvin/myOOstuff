@@ -15,7 +15,9 @@ all : $(OBJS)
 
 dao : $(OBJS)
 		$(CXX) teste_dao.cpp $(OBJS) $(LINKER_FALGS) -o teste_dao_exec 
-
+		
+empresa : empresa.o dao.o 
+		$(CXX) teste_empresa.cpp  empresa.o dao.o $(LINKER_FALGS) -o teste_empresa_exec
 
 main.o: main_copy.cpp 
 	$(CXX) -c main_copy.cpp 
